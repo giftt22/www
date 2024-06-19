@@ -14,17 +14,34 @@
     h1.q1::before{
         content: "";
         position: absolute;
-        top: 0%;
-        left: 0%;
-        bottom: 0%;
-        width: 30%;
-        height: 30%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 30px;
+        height: 30px;
         margin: auto;
         display: block;
         background-color: #5bdb9e;
         border-radius: 45%;
     }
-    h1.q1::after{}
+    h1.q1::after{
+        content: "";
+        position: absolute;
+        top: 5;
+        left: 5px;
+        bottom: 0;
+        width: 5px;
+        height: 5px;
+        margin: auto;
+        display: block;
+        border-right: 3px solid #fff;
+        border-top: 3px solid #fff;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+
+    }
 </style>
 </body>
 </html>
