@@ -1,59 +1,141 @@
+[15:35] 山岸　兜樹
 <!DOCTYPE html>
-<html lang="jp">
-<head>
+ <html lang="ja">
+ <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Design Practice</title>
-</head>
-<style>
-    .body{
-        background-color: #199ebd;
-    }
-    .section1{
-        background-color: lightblue;
-    }
-
-</style>
-<body>
-    <div class="section1">
-        <h2>Section1</h2>
-        <p>This is the first section. It has a light blue</p>
-        <p>background,padding,margin,and a box</p>
-        <p>shadow.The layout adijusts responsively to</p>
-        <p>different screen sizes.</p>
-        <img src="image/section1 (1).jpg" alt="iage for section1">
-        <button class="button">onclick="showAlert()"click Me</button> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Profile Card</title>
+    <style>
+        .ac{
+            display: flex;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .profile-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 300px;
+            margin: 20px;
+        }
+        .profile-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .profile-card img {
+            width: 100%;
+            height: auto;
+        }
+        .profile-card h2 {
+            margin: 15px 0;
+        }
+        .profile-card p {
+            color: #666;
+            margin: 0 15px 15px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .social-icons a {
+            color: #333;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #0073e6;
+        }
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            margin-bottom: 15px;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        @media (max-width: 768px) {
+            .profile-card {
+                width: 90%;
+            }
+        }
+        @media screen and (max-width: 800px) {
+        .aaaaaaa {
+          flex-wrap: wrap;
+        }
+      }
+ 
+      @media screen and (max-width: 400px) {
+       . {
+          display: block;
+        }
+      }
+    </style>
+    <script>
+        function followAlert() {
+            alert('You are now following this user!');
+        }
+    </script>
+ </head>
+ <body>
+    <div class="ac">
+ 
+    <div class="profile-card">
+        <img src="images/profile.jpg" alt="Profile Image">
+        <h2>John Doe</h2>
+        <p>Web Developer & Designer. Passionate about creating interactive and dynamic
+web experiences.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+        <button class="button" onclick="followAlert()">Follow</button>
     </div>
-
-    <div class="section2">
-        <h2>section2</h2>
-        <p>This is the second section.It has a light</p>
-        <p>orange background,padding,margin,and a</p>
-        <p>box shadow.The layout adjususts responsively</p>
-        <p>to different screen sizes</p>
-        <img src="image/section2 (2).jpg" alt="section2">
-        <button class="button">onclick="showAlert()"click Me</button>
+ 
+    <div class="profile-card">
+        <img src="images/profile.jpg" alt="Profile Image">
+        <h2>John Doe</h2>
+        <p>Web Developer & Designer. Passionate about creating interactive and dynamic
+web experiences.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+        <button class="button" onclick="followAlert()">Follow</button>
     </div>
-
-    <div class="section3">
-        <h2>sectiion3</h2>
-        <p>This is the third section. It has a light purple</p>
-        <p>background,padding,margin,and box</p>
-        <p>shadow, The layout adjusts responsively to</p>
-        <p>different screen sizes</p>
-        <ima src="image/section3 (1).jpg" alt="section3">
-        <button class="button2">onclick="showAlert()"click Me</button>
+ 
+    <div class="profile-card">
+        <img src="images/profile.jpg" alt="Profile Image">
+        <h2>John Doe</h2>
+        <p>Web Developer & Designer. Passionate about creating interactive and dynamic
+web experiences.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+        <button class="button" onclick="followAlert()">Follow</button>
     </div>
-
-    <div class="section4">
-        <h2>Section4</h2>
-        <p> This is the fourth section.It has alight green
-            background.padding,margin,and a boxshadow.
-            The layout adjusts responsively to different,screen
-            sizes
-        </p>
-        <img src="image/section4.jpg" alt="section4">
-        <botton class="botton3">onclick="showAlert()"click Me</botton>
-    </div>
-</body>
-</html>
+ </div>
+ </body>
+ </html>
+ 
