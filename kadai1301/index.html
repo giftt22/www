@@ -6,56 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Profile Card</title>
     <style>
-        .ac{
+      .profile{
             display: flex;
         }
+ 
+        #header{
+        width: 100%;
+        background-color: black;
+        padding: 15px;
+        text-align: center;
+      }
+     
+      h1{
+       color: #e6f7ff;
+ 
+      }
+ 
+ 
+      #footer{
+     width: 100%;
+     background-color: #000000;
+     text-align: center;
+     padding: 15px;
+ 
+ 
+     width: flex;
+ 
+    }
+     
+      h6{
+       color: #e6f7ff;
+ 
+      }
+ 
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
-            display: flex;
+            background-color: #78b4e8;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             margin: 0;
+ 
+ 
         }
         .profile-card {
-            background-color: white;
+          background-color: #e6f7ff;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             overflow: hidden;
-            text-align: center;
             transition: transform 0.3s, box-shadow 0.3s;
             width: 300px;
-            margin: 20px;
+            margin: 30px;
         }
-        .profile-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+ 
+        .profile-card1 {
+          background-color: #fff2e6;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 300px;
+            margin: 30px;
         }
-        .profile-card img {
-            width: 100%;
-            height: auto;
+ 
+        .profile-card2 {
+          background-color: #f9e6ff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 300px;
+            margin: 30px;
         }
-        .profile-card h2 {
-            margin: 15px 0;
-        }
-        .profile-card p {
-            color: #666;
-            margin: 0 15px 15px;
-        }
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 15px;
-        }
-        .social-icons a {
-            color: #333;
-            margin: 0 10px;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        .social-icons a:hover {
-            color: #0073e6;
+ 
+        .profile-card3 {
+          background-color: #15f357;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 300px;
+            margin: 30px;
         }
         .button {
             background-color: #4CAF50;
@@ -67,74 +96,130 @@
             padding: 10px 20px;
             transition: background-color 0.3s;
         }
-        .button:hover {
-            background-color: #45a049;
+ 
+        .button1 {
+            background-color: #f90b0b;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            margin-bottom: 15px;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
         }
+ 
+        .button2 {
+            background-color: #130bf9;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            margin-bottom: 15px;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+       
+        .button3 {
+            background-color: #d8b30ae4;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            margin-bottom: 15px;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+ 
+ 
         @media (max-width: 768px) {
             .profile-card {
-                width: 90%;
+                width: 90%;      
             }
         }
         @media screen and (max-width: 800px) {
-        .aaaaaaa {
-          flex-wrap: wrap;
+            .profile {
+            flex-wrap: wrap;
         }
       }
  
       @media screen and (max-width: 400px) {
-       . {
+        .profile  {
           display: block;
-        }
       }
+ 
+ 
+      }
+   
+ 
     </style>
+ 
     <script>
-        function followAlert() {
-            alert('You are now following this user!');
+ 
+        function showAlert() {
+            alert("Butto clicked");
         }
     </script>
+ 
  </head>
  <body>
-    <div class="ac">
  
-    <div class="profile-card">
-        <img src="images/profile.jpg" alt="Profile Image">
-        <h2>John Doe</h2>
-        <p>Web Developer & Designer. Passionate about creating interactive and dynamic
-web experiences.</p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-        </div>
-        <button class="button" onclick="followAlert()">Follow</button>
-    </div>
+  <div id="header">
+     
+    <h1> Responsive Design Practice</h1>
  
-    <div class="profile-card">
-        <img src="images/profile.jpg" alt="Profile Image">
-        <h2>John Doe</h2>
-        <p>Web Developer & Designer. Passionate about creating interactive and dynamic
-web experiences.</p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-        </div>
-        <button class="button" onclick="followAlert()">Follow</button>
-    </div>
- 
-    <div class="profile-card">
-        <img src="images/profile.jpg" alt="Profile Image">
-        <h2>John Doe</h2>
-        <p>Web Developer & Designer. Passionate about creating interactive and dynamic
-web experiences.</p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-        </div>
-        <button class="button" onclick="followAlert()">Follow</button>
-    </div>
  </div>
- </body>
- </html>
  
+    <div class="profile">
+    <div class="profile-card">
+        <h2>Section1</h2>
+        <P>This is the fist Section. It has a light blue background,padding,margin,and a box shadow.
+            The layout adjusts responsively to different screen sizes.
+        </P>
+        <img src="image/section1 (1).jpg" width="40%">
+        <button class="button" onclick="showAlert()">Click Me </button>
+      </div>
+ 
+       
+ 
+ 
+    <div class="profile-card1">
+      <h2>Section2</h2>
+        <P>This is the second Section. It has a light orange background,padding,margin,and a box shadow.
+            The layout adjusts responsively to different screen size.
+        </P>
+        <img src="image/section2 (2).jpg" width="40%">
+        <button class="button1" onclick="showAlert()">Click Me </button>
+      </div>
+       
+ 
+ 
+    <div class="profile-card2">
+      <h2>Section3</h2>
+      <P>This is the third Section. It has a light purple background,padding,margin,and a box shadow.
+          The layout adjusts responsively to different screen size.
+      </P>
+      <img src="image/section3 (1).jpg" width="40%">
+      <button class="button2" onclick="showAlert()">Click Me </button>
+    </div>
+       
+ 
+    <div class="profile-card3">
+      <h2>Section4</h2>
+      <P>This is the fourth Section. It has a light green background,padding,margin,and a box shadow.
+          The layout adjusts responsively to different screen size.
+      </P>
+      <img src="image/section4.jpg" width="40%">
+      <button class="button3" onclick="showAlert()">Click Me </button>
+    </div>
+ 
+  </div>
+ 
+    <div id="footer">
+     
+      <h6>©2024 Advanced Responsive Design Practice</h6>
+   
+   </div>
+ 
+ 
+ </body>
+ </html
