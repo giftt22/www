@@ -1,225 +1,189 @@
 <!DOCTYPE html>
- <html lang="ja">
- <head>
+<html lang="ja">
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Profile Card</title>
-    <style>
-      .profile{
-            display: flex;
-        }
- 
-        #header{
-        width: 100%;
-        background-color: black;
-        padding: 15px;
-        text-align: center;
-      }
-     
-      h1{
-       color: #e6f7ff;
- 
-      }
- 
- 
-      #footer{
-     width: 100%;
-     background-color: #000000;
-     text-align: center;
-     padding: 15px;
- 
- 
-     width: flex;
- 
+    <title>Responsive Design With Button Actions</title>
+</head>
+<style>
+    body{
+        background-color: rgb(227, 239, 255);
+        margin: 0;
     }
-     
-      h6{
-       color: #e6f7ff;
  
-      }
+    #header{
+        padding: 1px;
+        background-color: black;
+    }
  
-        body {
-            background-color: #78b4e8;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
+    #footer{
+        padding: 1px;
+        background-color: black;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 20px;
+    }
  
+    h1{
+        color: rgb(255, 255, 255);
+        padding: 0;
+        text-align: center;
+    }
  
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        height: 100hv;
+    }
+ 
+    .section1{
+        background-color: rgb(126, 210, 221);
+        padding: 20px;
+        margin: 15px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px gray;
+        width: 400px;
+        overflow: hidden;
         }
-        .profile-card {
-          background-color: #e6f7ff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-            width: 300px;
-            margin: 30px;
-        }
+   
+    .section2{
+        background-color: rgb(255, 241, 211);
+        padding: 20px;
+        margin: 15px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px gray;
+        width: 400px;
+        overflow: hidden;
+    }
  
-        .profile-card1 {
-          background-color: #fff2e6;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-            width: 300px;
-            margin: 30px;
-        }
+    .section3{
+        background-color: rgb(252, 210, 245);
+        padding: 20px;
+        margin: 15px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px gray;
+        width: 400px;
+        overflow: hidden;
+    }
  
-        .profile-card2 {
-          background-color: #f9e6ff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-            width: 300px;
-            margin: 30px;
-        }
+    .section4{
+        background-color: rgb(222, 252, 210);
+        padding: 20px;
+        margin: 15px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px gray;
+        width: 400px;
+        overflow: hidden;
+    }
  
-        .profile-card3 {
-          background-color: #15f357;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-            width: 300px;
-            margin: 30px;
-        }
-        .button {
-            background-color: #4CAF50;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            cursor: pointer;
-            margin-bottom: 15px;
-            padding: 10px 20px;
-            transition: background-color 0.3s;
-        }
+    .button1{
+        background-color: rgb(0, 185, 15);
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        border: 0;
+    }
  
-        .button1 {
-            background-color: #f90b0b;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            cursor: pointer;
-            margin-bottom: 15px;
-            padding: 10px 20px;
-            transition: background-color 0.3s;
-        }
+    .button2{
+        background-color: rgb(228, 33, 33);
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        border: 0;
+    }
  
-        .button2 {
-            background-color: #130bf9;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            cursor: pointer;
-            margin-bottom: 15px;
-            padding: 10px 20px;
-            transition: background-color 0.3s;
-        }
-       
-        .button3 {
-            background-color: #d8b30ae4;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            cursor: pointer;
-            margin-bottom: 15px;
-            padding: 10px 20px;
-            transition: background-color 0.3s;
-        }
+    .button3{
+        background-color: rgb(0, 86, 185);
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        border: 0;
+    }
  
+    .button4{
+        background-color: rgb(245, 212, 28);
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        border: 0;
+    }
  
-        @media (max-width: 768px) {
-            .profile-card {
-                width: 90%;      
+    @media screen and(max-width: 768px) {
+            .container {
+                width: 100%
             }
         }
         @media screen and (max-width: 800px) {
-            .profile {
-            flex-wrap: wrap;
+        .container {
+          flex-wrap: wrap;
         }
       }
  
       @media screen and (max-width: 400px) {
-        .profile  {
+       .container {
           display: block;
-      }
- 
- 
-      }
-   
- 
-    </style>
- 
-    <script>
- 
-        function showAlert() {
-            alert("Butto clicked");
         }
-    </script>
+      }  
  
- </head>
- <body>
+</style>
+<script>
+    function shoAlert() {
+        alert('Sho Alert!');
+    }
+</script>
+<body>
  
-  <div id="header">
-     
-    <h1> Responsive Design Practice</h1>
- 
- </div>
- 
-    <div class="profile">
-    <div class="profile-card">
-        <h2>Section1</h2>
-        <P>This is the fist Section. It has a light blue background,padding,margin,and a box shadow.
-            The layout adjusts responsively to different screen sizes.
-        </P>
-        <img src="image/section1 (1).jpg" width="40%">
-        <button class="button" onclick="showAlert()">Click Me </button>
-      </div>
- 
-       
- 
- 
-    <div class="profile-card1">
-      <h2>Section2</h2>
-        <P>This is the second Section. It has a light orange background,padding,margin,and a box shadow.
-            The layout adjusts responsively to different screen size.
-        </P>
-        <img src="image/section2 (2).jpg" width="40%">
-        <button class="button1" onclick="showAlert()">Click Me </button>
-      </div>
-       
- 
- 
-    <div class="profile-card2">
-      <h2>Section3</h2>
-      <P>This is the third Section. It has a light purple background,padding,margin,and a box shadow.
-          The layout adjusts responsively to different screen size.
-      </P>
-      <img src="image/section3 (1).jpg" width="40%">
-      <button class="button2" onclick="showAlert()">Click Me </button>
+    <div id="header">
+        <h1>Responsive Design With Button Actions</h1>
     </div>
-       
+   
+    <div class="container">
  
-    <div class="profile-card3">
-      <h2>Section4</h2>
-      <P>This is the fourth Section. It has a light green background,padding,margin,and a box shadow.
-          The layout adjusts responsively to different screen size.
-      </P>
-      <img src="image/section4.jpg" width="40%">
-      <button class="button3" onclick="showAlert()">Click Me </button>
+        <div class="section1">
+            <h2>section 1</h2>
+            <p>
+                This is the first section. It has a light blue background,padding,margin,and a box shadow. The layout adjusts responzively to diffrent screen size.
+            </p>
+            <img src="image/section1 (1).jpg" id="herd=img">
+            <br>
+            <button class="button1" onclick="shoAlert()">Click Me</button>
+        </div>
+ 
+        <div class="section2">
+            <h2>section 2</h2>
+            <p>
+                This is the second section. It has a light orange bakground,padding,margin,and a box shadow. The layout adjusts responsively to different screen sizes.
+            </p>
+            <img src="image/section2 (2).jpg" id="head_img">
+            <br>
+            <button class="button2" onclick="shoAlert()">Click Me</button>
+        </div>
+ 
+        <div class="section3">
+            <h2>section 3</h2>
+            <p>
+                This is the third section. It has a light purple background,padding,margin,and box shadow. The layout adjusts responsively to different screen sizes.
+            </p>
+            <img src="image/section3 (1).jpg" id="head_img">
+            <br>
+            <button class="button3" onclick="shoAlert()">Click Me</button>
+        </div>
+ 
+        <div class="section4">
+            <h2>section 4</h2>
+            <p>
+                This is the fourth section. It has a light green background,padding,margin,and a box shadow. The layout adjusts responsively to different screen sizes.
+            </p>
+            <img src="image/section4.jpg" id="head_img">
+            <br>
+            <button class="button4" onclick="shoAlert()">Click Me</button>
+        </div>
+ 
     </div>
- 
-  </div>
  
     <div id="footer">
-     
-      <h6>©2024 Advanced Responsive Design Practice</h6>
-   
-   </div>
+        <small>&copy; 2024 Responsive Design With Button Actions.</small>
+    </div>
  
- 
- </body>
- </html
+</body>
+</html>
